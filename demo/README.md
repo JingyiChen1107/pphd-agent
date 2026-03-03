@@ -20,28 +20,25 @@ demo/
 
 
 
-The 3-Step Workflow
+## 🚀 The 3-Step Workflow
 
-Step 1: Privacy-Gated Routing
+#### **Step 1: Privacy-Gated Routing**
+* **Goal:** Local PII protection and initial risk screening.
+* **Mechanism:** Raw Text → **Feature Hashing + ε-LDP** → **Student Classifier**.
+* **Key Output:** `risk_level` & `structured_slots`. No raw text leaves the client environment.
 
-Goal: Local PII protection and initial risk screening.
 
-Mechanism: Raw Text → Feature Hashing + ϵ-LDP → Student Classifier.
 
-Key Output: risk_level & structured_slots (e.g., symptoms). No raw text leaves the client.
+#### **Step 2: Contextual Retrieval (RAG)**
+* **Goal:** Evidence-based grounding using verified clinical guidelines.
+* **Mechanism:** Anonymized Slots → **FAISS Vector DB** → Top-K Evidence Retrieval.
+* **Key Output:** Contextual snippets with mandatory `doc_id` and `page_number`.
 
-Step 2: Contextual Retrieval (RAG)
 
-Goal: Evidence-based grounding using clinical guidelines.
 
-Mechanism: Anonymized Slots → FAISS Vector DB → Top-K Evidence Retrieval.
-
-Key Output: Contextual snippets with mandatory doc_id and page_number.
-
-Step 3: Verified Recommendations
-
-Goal: Traceable, safe, and cited AI advice.
-
-Mechanism: Evidence + Slots → LLM → Citation Verifier.
+#### **Step 3: Verified Recommendations**
+* **Goal:** Traceable, safe, and cited AI advice.
+* **Mechanism:** Evidence + Slots → **LLM** → **Citation Verifier**.
+* **Key Output:** Actionable advice with hard-coded citations, e.g., `(Source_A, p.12)`.
 
 Key Output: Actionable advice with hard-coded citations, e.g., (Source_A, p.12).
