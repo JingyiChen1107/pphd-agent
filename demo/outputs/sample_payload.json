@@ -1,0 +1,23 @@
+{
+  "risk_level": "high",
+  "stress_prob": 0.7181,
+  "slots": {
+    "symptoms": [
+      "anxiety",
+      "sleep_disturbance",
+      "depression"
+    ],
+    "duration": "2_week",
+    "severity": null,
+    "safety_flags": []
+  },
+  "privacy": {
+    "epsilon": 1.0,
+    "hash_dim": 75,
+    "seed": 0
+  },
+  "version": {
+    "student": "student_demo_D75_eps1",
+    "policy": "v0.1"
+  }
+}
