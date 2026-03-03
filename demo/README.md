@@ -18,7 +18,8 @@ demo/
 │  └─ day3_advice.md                             # Final output with mandatory citations
 └─ README.md                                     # Project Documentation
 
-
+```
+---
 
 ## 🚀 The 3-Step Workflow
 
