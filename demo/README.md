@@ -38,7 +38,11 @@ demo/
 * **Mechanism:** Raw Text → **Feature Hashing + ε-LDP** → **Student Classifier**.
 * **Key Output:** `risk_level` & `structured_slots`. No raw text leaves the client environment.
 
-
+<p align="center">
+  <a href="assets/payload_side_by_side.png">
+    <img src="assets/payload_side_by_side.png" width="800">
+  </a>
+</p>
 
 #### **Step 2: Contextual Retrieval (RAG)**
 * **Goal:** Evidence-based grounding using verified clinical guidelines.
@@ -51,6 +55,13 @@ demo/
 * **Goal:** Traceable, safe, and cited AI advice.
 * **Mechanism:** Evidence + Slots → **LLM** → **Citation Verifier**.
 * **Key Output:** Actionable advice with hard-coded citations, e.g., `(Source_A, p.12)`.
+
+
+<p align="center">
+  <a href="assets/cited_recommendations.png">
+    <img src="assets/cited_recommendations.png" width="800">
+  </a>
+</p>
 
 Key Output: Actionable advice with hard-coded citations, e.g., (Source_A, p.12).
 
