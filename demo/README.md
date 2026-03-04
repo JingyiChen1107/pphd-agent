@@ -16,10 +16,14 @@ demo/
 ├─ outputs/
 │  ├─ sample_payload.json                        # Anonymized data for downstream use
 │  └─ day3_advice.md                             # Final output with mandatory citations
+├─ assets/
 └─ README.md                                     # Project Documentation
+
 
 ```
 ---
+
+![PPHD-Agent Architecture](assets/architecture.png)
 
 ## 🚀 The 3-Step Workflow
 
