@@ -25,14 +25,8 @@ demo/
 
 ## PPHD-Agent Architecture
 
-<p align="center">
-  <a href="assets/architecture.png">
-    <img src="assets/architecture.png" alt="PPHD-Agent Architecture" width="700">
-  </a>
-</p>
-
 <details>
-  <summary>🔍 点击查看数据脱敏示例 (Data Anonymization Screenshot)</summary>
+  <summary>🔍 View: PPHD-Agent System Architecture</summary>
   <br>
   <img src="assets/architecture.png" alt="PPHD-Agent Architecture" width="700">
 </details>
@@ -44,11 +38,16 @@ demo/
 * **Mechanism:** Raw Text → **Feature Hashing + ε-LDP** → **Student Classifier**.
 * **Key Output:** `risk_level` & `structured_slots`. No raw text leaves the client environment.
 
-<p align="center">
-  <a href="assets/payload_side_by_side.png">
-    <img src="assets/payload_side_by_side.png" width="800">
-  </a>
-</p>
+<details>
+  <summary>🔍 View: Data Anonymization (Raw Text vs. Hashed Payload)</summary>
+  <br>
+  <p align="center">
+    <a href="assets/payload_side_by_side.png">
+      <img src="assets/payload_side_by_side.png" alt="Privacy Side-by-Side" width="800">
+    </a>
+  </p>
+  <p align="center"><i>Comparison showing how sensitive PII is stripped and replaced by encrypted features.</i></p>
+</details>
 
 #### **Step 2: Contextual Retrieval (RAG)**
 * **Goal:** Evidence-based grounding using verified clinical guidelines.
@@ -63,11 +62,15 @@ demo/
 * **Key Output:** Actionable advice with hard-coded citations, e.g., `(Source_A, p.12)`.
 
 
-<p align="center">
-  <a href="assets/cited_recommendations.png">
-    <img src="assets/cited_recommendations.png" width="800">
-  </a>
-</p>
-
+<details>
+  <summary>🔍 View: Grounded Recommendations (Mandatory Citations)</summary>
+  <br>
+  <p align="center">
+    <a href="assets/cited_recommendations.png">
+      <img src="assets/cited_recommendations.png" alt="Cited Recommendations" width="800">
+    </a>
+  </p>
+  <p align="center"><i>Final agent response showcasing traceability to clinical source files.</i></p>
+</details>
 Key Output: Actionable advice with hard-coded citations, e.g., (Source_A, p.12).
 
