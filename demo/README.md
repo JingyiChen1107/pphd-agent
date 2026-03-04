@@ -31,6 +31,12 @@ demo/
   </a>
 </p>
 
+<details>
+  <summary>🔍 点击查看数据脱敏示例 (Data Anonymization Screenshot)</summary>
+  <br>
+  <img src="assets/architecture.png" alt="PPHD-Agent Architecture" width="700">
+</details>
+
 ## 🚀 The 3-Step Workflow
 
 #### **Step 1: Privacy-Gated Routing**
