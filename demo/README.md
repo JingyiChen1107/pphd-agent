@@ -49,6 +49,7 @@ demo/
   <p align="center"><i>Comparison showing how sensitive PII is stripped and replaced by encrypted features.</i></p>
 </details>
 
+
 #### **Step 2: Contextual Retrieval (RAG)**
 * **Goal:** Evidence-based grounding using verified clinical guidelines.
 * **Mechanism:** Anonymized Slots → **FAISS Vector DB** → Top-K Evidence Retrieval.
@@ -72,5 +73,8 @@ demo/
   </p>
   <p align="center"><i>Final agent response showcasing traceability to clinical source files.</i></p>
 </details>
+
+
+
 Key Output: Actionable advice with hard-coded citations, e.g., (Source_A, p.12).
 
