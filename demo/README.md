@@ -23,7 +23,7 @@ demo/
 ```
 ---
 
-![PPHD-Agent Architecture](assets/architecture.png)
+## PPHD-Agent Architecture
 
 <p align="center">
   <a href="assets/architecture.png">
