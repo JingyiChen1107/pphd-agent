@@ -25,6 +25,12 @@ demo/
 
 ![PPHD-Agent Architecture](assets/architecture.png)
 
+<p align="center">
+  <a href="assets/architecture.png">
+    <img src="assets/architecture.png" alt="PPHD-Agent Architecture" width="700">
+  </a>
+</p>
+
 ## 🚀 The 3-Step Workflow
 
 #### **Step 1: Privacy-Gated Routing**
